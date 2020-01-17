@@ -3,5 +3,12 @@
  *
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
+const fs = require("fs")
 
-// You can delete this file if you're not using it
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
+  const typeDefs = fs.readFileSync("./src/types/type-definitions.graphql", {
+    encoding: "utf8",
+  })
+  createTypes(typeDefs)
+}

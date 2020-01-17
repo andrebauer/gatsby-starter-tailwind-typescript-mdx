@@ -9,6 +9,25 @@ module.exports = {
     {
       resolve: `gatsby-plugin-postcss`,
     },
+    `gatsby-transformer-yaml`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/content`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-graphql-codegen`,
+      options: {
+        fileName: `types/graphql-types.ts`,
+        documentPaths: [
+          "./src/**/*.{ts,tsx,js,jsx}",
+          "./node_modules/gatsby-*/**/*.js",
+        ],
+        codegenDelay: 200,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

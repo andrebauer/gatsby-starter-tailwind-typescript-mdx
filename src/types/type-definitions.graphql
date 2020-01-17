@@ -1,0 +1,10 @@
+type BooksYaml implements Node {
+  title: String!
+  year: Int!
+  authors: [Person!]!
+}
+
+type Person {
+  firstname: String!
+  lastname: String!
+}
