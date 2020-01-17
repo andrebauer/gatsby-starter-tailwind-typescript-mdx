@@ -28,6 +28,15 @@ module.exports = {
         codegenDelay: 200,
       },
     },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        defaultLayouts: {
+          // posts: require.resolve("./src/components/posts-layout.js"),
+          default: require.resolve("./src/components/layout.js"),
+        },
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
