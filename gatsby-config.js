@@ -33,7 +33,7 @@ module.exports = {
       options: {
         defaultLayouts: {
           // posts: require.resolve("./src/components/posts-layout.js"),
-          default: require.resolve("./src/components/layout.js"),
+          default: require.resolve("./src/layouts/layout.js"),
         },
       },
     },
