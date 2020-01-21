@@ -8,3 +8,13 @@ type Person {
   firstname: String!
   lastname: String!
 }
+
+type Site implements Node {
+  siteMetadata: SiteMetadata!
+}
+
+type SiteMetadata {
+  title: String!
+  description: String!
+  author: String!
+}
