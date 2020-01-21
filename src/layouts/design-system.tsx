@@ -1,6 +1,14 @@
 import React from "react"
 
-export const H1 = ({ children, margins, id }) => (
+type LayoutProps = React.ReactNode & RouterProps
+
+interface HProps {
+  children: LayoutProps
+  margins: String
+  id?: optional<String>
+}
+
+export const H1: React.FC<HProps> = ({ children, margins, id }) => (
   <div className="">
     <h1
       id={id}
@@ -12,7 +20,7 @@ export const H1 = ({ children, margins, id }) => (
   </div>
 )
 
-export const H2 = ({ children, margins, id }) => (
+export const H2: React.FC<HProps> = ({ children, margins, id }) => (
   <div className="">
     <h2
       id={id}
@@ -24,7 +32,7 @@ export const H2 = ({ children, margins, id }) => (
   </div>
 )
 
-export const H3 = ({ children, margins, id }) => (
+export const H3: React.FC<HProps> = ({ children, margins, id }) => (
   <h3 id={id} className={`text-primary-700 text-2xl ${margins || "pt-6 pb-3"}`}>
     {children}
   </h3>

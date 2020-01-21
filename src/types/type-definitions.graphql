@@ -18,3 +18,7 @@ type SiteMetadata {
   description: String!
   author: String!
 }
+
+type Mdx implements Node {
+  frontmatter: MdxFrontmatter
+}

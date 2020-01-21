@@ -33,8 +33,8 @@ module.exports = {
       options: {
         extensions: [".mdx", ".md"],
         defaultLayouts: {
-          // posts: require.resolve("./src/components/posts-layout.js"),
-          default: require.resolve("./src/layouts/layout.js"),
+          // posts: require.resolve("./src/components/posts-layout.tsx"),
+          default: require.resolve("./src/layouts/layout.tsx"),
         },
         gatsbyRemarkPlugins: [
           {
