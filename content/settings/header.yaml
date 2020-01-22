@@ -1,0 +1,22 @@
+id: header
+navigation:
+  - href: /
+    label: Startseite
+    linktype: internal
+    order: 100
+    visibility: visible
+  - href: /page-2
+    label: Page 2
+    linktype: internal
+    order: 200
+    visibility: visible
+  - href: /page-3
+    label: Page 3
+    linktype: internal
+    order: 300
+    visibility: visible
+  - href: /posts
+    label: Posts
+    linktype: internal
+    order: 400
+    visibility: visible

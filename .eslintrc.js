@@ -21,6 +21,7 @@ module.exports = {
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
+      impliedStrict: true,
     },
     ecmaVersion: 2018, // Allows for the parsing of modern ECMAScript features
     sourceType: "module", // Allows for the use of imports

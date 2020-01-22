@@ -22,3 +22,25 @@ type SiteMetadata {
 type Mdx implements Node {
   frontmatter: MdxFrontmatter
 }
+
+type SettingsYaml implements Node {
+  navigation: [SettingsYamlNavigation!]!
+}
+
+type SettingsYamlNavigation {
+  href: String!
+  label: String!
+  linktype: Linktype!
+  order: Int!
+  visibility: Visibility!
+}
+
+enum Linktype {
+  internal
+  external
+}
+
+enum Visibility {
+  visible
+  invisible
+}

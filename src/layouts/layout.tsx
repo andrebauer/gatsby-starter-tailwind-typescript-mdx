@@ -4,6 +4,7 @@ import Header from "../components/header"
 import "./layout.css"
 import "../css/style.css"
 import { RouterProps } from "@reach/router"
+import { Navigation } from "../components/navigation"
 
 type LayoutProps = React.ReactNode & RouterProps
 
@@ -21,6 +22,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
+      <Navigation />
       <div
         class="bg-red-300"
         style={{
