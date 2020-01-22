@@ -1,7 +1,7 @@
 id: header
 navigation:
   - href: /
-    label: Startseite
+    label: Home
     linktype: internal
     order: 100
     visibility: visible
@@ -20,3 +20,8 @@ navigation:
     linktype: internal
     order: 400
     visibility: visible
+  - href: /nothing
+    label: Nothing
+    linktype: internal
+    order: 250
+    visibility: invisible
