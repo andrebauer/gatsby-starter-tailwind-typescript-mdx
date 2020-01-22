@@ -1,5 +1,4 @@
 import React from "react"
-import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "../components/header"
 import "./layout.css"
@@ -41,11 +40,5 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     </>
   )
 }
-
-/*
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
-*/
 
 export default Layout
