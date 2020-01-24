@@ -19,6 +19,19 @@ const Post: React.FC<{ data: Mdx }> = ({ data: { mdx } }) => (
         h3: DesignSystem.H3,
         // Or define component inline
         p: props => <p {...props} class="text-red-700" />,
+        ul: props => (
+          <ul className="tk-list-inside ml-6 list-disc pb-6">
+            {props.children}
+          </ul>
+        ),
+        ol: props => (
+          <ol className="tk-list-inside list-decimal ml-6 pb-6">
+            {props.children}
+          </ol>
+        ),
+        li: props => (
+          <li className="text-lg leading-relaxed">{props.children}</li>
+        ),
       }}
     >
       {" "}
